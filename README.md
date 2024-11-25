@@ -1,3 +1,9 @@
+
+## TypeScript简介
+TypeScript是JavaScript的超集
+ts=Type+JavaScript(为js添加了类型系统)
+TypeScript是微软的开发的开源编程语言，设计目标是开发大型应用，可以在任何浏览器、任何计算机、任何操作系统上运行
+
 ## TypeScript 编译
 将ts编译成js的命令: tsc 文件名.ts <br>
 自动将某个ts编译为js命令：tsc 文件名.ts -w
@@ -6,10 +12,6 @@
          使用ts-node命令
 
 
-## TypeScript简介
-TypeScript是JavaScript的超集
-ts=Type+JavaScript(为js添加了类型系统)
-TypeScript是微软的开发的开源编程语言，设计目标是开发大型应用，可以在任何浏览器、任何计算机、任何操作系统上运行
 
 ## TypeScript优势
 类型化思维使得开发更加严谨，提前发现错误，减少改Bug的时间
