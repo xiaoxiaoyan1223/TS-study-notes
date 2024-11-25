@@ -27,7 +27,7 @@ let e:10;
 //可以使用|来连接多个内容
 let f:'male'|'femal'
 f='male'
-f='femal'
+f='female'
 //f='hello' 会报错 因为只能是那两个
 let g:string|boolean
 g='hello'
@@ -87,6 +87,9 @@ x=['a','b','c']
 //number[] 表示数值类型
 let n:number[]
 n=[1,2,3]
+// 二维数组
+let arr1:number[][]=[[1],[2]]
+let arr2:Array<Array<number>>=[[1],[2]]
 
 /**
  * 元组就是固定长度的数组
@@ -121,3 +124,18 @@ let temp2:Object='abc'
 // let temp3:object=1
 let temp4:object={}
 
+/**
+* 在ts中可以定义this的类型，在js中是不可以的
+* 不定义this也可以正常使用
+ */
+    interface Obj{
+        user:number[]
+        add:(this:Obj,num:number)=>void
+    }
+
+    let obj5:Obj={
+        user:[1,2,3],
+        add(this:Obj,num:number){
+            this.user.push(4)
+        }
+    }
