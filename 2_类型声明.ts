@@ -64,7 +64,7 @@ b=<string> j
 //对对象做限制 {}可以用来指定对象中包含哪些属性 语法：{对象名：属性名，……}
 //属性名后面加上？表示属性是可选的
 let k:{name:string}
-k={name:'ggy'}
+k={name:'lxy'}
 
 //[propName:string]:any 表示任意类型的属性
 let l:{name:string,[propName:string]:string}
@@ -108,3 +108,16 @@ q={
     name:'孙悟空',
     gender:0
 }
+
+/**
+ * Object代表所有类型
+ * object 代表引用类型
+ * {} 可以理解为new Object代表所有类型
+ */ 
+let temp1:Object=1
+let temp2:Object='abc'
+
+// 这样写是会报错的
+// let temp3:object=1
+let temp4:object={}
+
