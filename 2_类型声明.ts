@@ -1,3 +1,4 @@
+/*
 类型层级：
    unkonw   any
       Object
@@ -5,7 +6,7 @@ Number String Boolean
 number string boolean
   1    'test'  true
        never
-
+*/
 //声明一个变量a,同时指定它的类型为number
 let a:number;
 //a的类型设置为number 以后的使用过程中a的值只能是number
@@ -26,7 +27,7 @@ function sum1(a:number,b:number):number{
     //这如果是字符串等其他类型会报错
     return a+b
 }
-sum(123,456) //ts相对比较严格 传参个数多了或者少了都会报错 类型不对也会报错
+sum1(123,456) //ts相对比较严格 传参个数多了或者少了都会报错 类型不对也会报错
 
 //也可以使用字面量进行类型声明 一声名就不能改了
 let e:10; 
