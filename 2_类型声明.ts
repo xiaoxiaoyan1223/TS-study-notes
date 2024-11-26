@@ -65,10 +65,24 @@ j=true
  */
 b=j as string
 b=<string> j
-
-//void 用来表示空 以函数为例就表示没有返回值的函数 可以return null或者return undefined 
-
-//never表示永远不会有返回结果
+/**
+ * void和never
+ * void 用来表示空 以函数为例就表示没有返回值的函数 可以return null或者return undefined 
+ * never表示永远不会有返回结果
+ * type A = void | number | never
+ * 当我们鼠标移上去的时候会发现 只有void和number    never在联合类型中会被直接移除
+ * 
+ * void类型只是没有返回值 但本身不会出错
+    function Void():void {
+        console.log();
+    }
+ 
+   never只会抛出异常没有返回值
+    function Never():never {
+    throw new Error('aaa')
+    }
+ * 
+ */
 
 //对对象做限制 {}可以用来指定对象中包含哪些属性 语法：{对象名：属性名，……}
 //属性名后面加上？表示属性是可选的
