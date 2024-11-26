@@ -1,3 +1,11 @@
+类型层级：
+   unkonw   any
+      Object
+Number String Boolean
+number string boolean
+  1    'test'  true
+       never
+
 //声明一个变量a,同时指定它的类型为number
 let a:number;
 //a的类型设置为number 以后的使用过程中a的值只能是number
