@@ -35,7 +35,7 @@ let e:10;
 //可以使用|来连接多个内容
 let f:'male'|'femal'
 f='male'
-f='female'
+// f='female'
 //f='hello' 会报错 因为只能是那两个
 let g:string|boolean
 g='hello'
