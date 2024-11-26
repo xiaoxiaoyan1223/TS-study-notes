@@ -76,7 +76,6 @@ b=<string> j
     function Void():void {
         console.log();
     }
- 
    never只会抛出异常没有返回值
     function Never():never {
     throw new Error('aaa')

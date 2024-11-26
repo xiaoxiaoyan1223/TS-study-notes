@@ -67,4 +67,5 @@ interface Len{
 }
 function getLength<T extends Len>(arg:T){
     return arg.length
+    
 }
