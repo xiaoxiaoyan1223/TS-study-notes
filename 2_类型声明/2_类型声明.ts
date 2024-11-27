@@ -161,3 +161,20 @@ let temp4:object={}
             this.user.push(4)
         }
     }
+
+/**
+ * Map Set weakMap weakSet
+ */
+// set
+let set:Set<number>=new Set([1,2,3,3,3,3])
+
+// map
+let obj={name:'lxy'}
+let map:Map<any,any>=new Map()
+map.set(obj,'xy')
+
+// weakMap weakSet弱引用机制
+let obj2={name:'yy'}  //1
+let temp=obj2         //2
+let weakMap:WeakMap<object,any>=new WeakMap()
+weakMap.set(obj2,'abcd')  //弱引用不会计入垃圾回收策略
